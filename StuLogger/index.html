@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Budget Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Budget Expense Tracker</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Expense Tracker</a>
+            <a href="#">Summary</a>
+        </nav>
+    </header>
+
+    <section id="profile">
+        <h2>Profile</h2>
+        <div class="profile-info">
+            <p>Name: Yash Choudhary</p>
+            <p>Monthly Budget: ₹100000</p>
+        </div>
+    </section>
+
+    <section id="expense-tracker">
+        <h2>Add Expense</h2>
+        <input type="text" id="expense-name" placeholder="Expense Name">
+        <input type="number" id="expense-amount" placeholder="Amount">
+        <button onclick="addExpense()">Add</button>
+        
+        <h3>Expense List</h3>
+        <ul id="expense-list"></ul>
+    </section>
+
+    <section id="summary">
+        <h2>Expense Summary</h2>
+        <canvas id="expenseChart" width="200" height="200"></canvas>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

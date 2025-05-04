@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do & Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">Your Website</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work Tracking</a></li>
+                <li><a href="#expense">Expense Tracker</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Landing Page -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our Website</h1>
+            <p>Track your work & expenses easily!</p>
+            <a href="#work" class="btn">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="hero-image.png" alt="Hero Image">
+    </section>
+
+    <!-- Work Tracking (To-Do List) -->
+    <section id="work" class="section">
+        <h2>Work Tracking (To-Do List with Timer)</h2>
+        <input type="text" id="todoInput" placeholder="Enter a task">
+        <input type="datetime-local" id="todoTime">
+        <button onclick="addTodo()">Add Task</button>
+        <ul id="todoList"></ul>
+    </section>
+
+    <!-- Expense Tracker -->
+    <section id="expense" class="section">
+        <h2>Student Expense Tracker</h2>
+        <input type="text" id="expenseName" placeholder="Expense Name">
+        <input type="number" id="expenseAmount" placeholder="Amount">
+        <select id="expenseCategory">
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Rent">Rent</option>
+            <option value="Other">Other</option>
+        </select>
+        <button onclick="addExpense()">Add Expense</button>
+        <h3>Total Expense: $<span id="totalExpense">0</span></h3>
+        <h3>Remaining Balance: $<span id="remainingBalance">0</span></h3>
+        <ul id="expenseList"></ul>
+
+        <h2>Lend/Borrow Tracker</h2>
+        <input type="text" id="personName" placeholder="Person Name">
+        <input type="number" id="lendAmount" placeholder="Amount">
+        <select id="lendType">
+            <option value="Given">Given</option>
+            <option value="Taken">Taken</option>
+        </select>
+        <button onclick="addLendBorrow()">Add</button>
+        <ul id="lendList"></ul>
+    </section>
+
+    <!-- Our Services -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <p>We provide work tracking, expense tracking, and productivity solutions.</p>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Website | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
